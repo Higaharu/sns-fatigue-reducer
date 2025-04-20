@@ -6,7 +6,7 @@ SNSの過剰利用による精神的疲労を軽減するためのChrome/Edge拡
 
 | 通常表示 | 疲労度がしきい値を超えた場合 |
 |-----------|-----------------------------|
-| ![ぼやける前](sns-fatigue-reducer/before_blur.png) | ![ぼやけた後](sns-fatigue-reducer/after_blur.png) |
+| ![ぼやける前](assets/before_blur.png) | ![ぼやけた後](assets/after_blur.png) |
 
 
 ## 機能
