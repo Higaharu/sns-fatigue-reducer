@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "SNS Fatigue Reducer",
+  "version": "1.0.0",
+  "description": "SNS利用による精神的疲労を軽減するための拡張機能",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.twitter.com/*",
+    "https://*.x.com/*",
+    "https://*.facebook.com/*",
+    "https://*.instagram.com/*"
+  ],
+  "background": {
+    "service_worker": "sw.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.twitter.com/*",
+        "https://*.x.com/*", 
+        "https://*.facebook.com/*", 
+        "https://*.instagram.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["sidepanel.html", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
