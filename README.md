@@ -2,6 +2,13 @@
 
 SNSの過剰利用による精神的疲労を軽減するためのChrome/Edge拡張機能です。
 
+## 疲労度によるぼかし効果の例
+
+| 通常表示 | 疲労度がしきい値を超えた場合 |
+|-----------|-----------------------------|
+| ![ぼやける前](sns-fatigue-reducer/before_blur.png) | ![ぼやけた後](sns-fatigue-reducer/after_blur.png) |
+
+
 ## 機能
 
 - SNSサイト（Twitter/X, Facebook, Instagramなど）の閲覧時間を追跡
